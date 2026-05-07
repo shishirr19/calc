@@ -194,7 +194,7 @@ class Expr:
 		elif self.op == '<<':   return x << y
 		elif self.op == '>>':   return x >> y
 		elif self.op == '+':    return x + y
-		elif self.op == '-':    return x  y #- initially 
+		elif self.op == '-':    return x + y #- initially 
 		elif self.op == '*':    return x * y
 		elif self.op == '/':
 			if y:
