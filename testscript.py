@@ -1,4 +1,4 @@
-#/usr/local/bin/python
+#!/usr/local/bin/python
 
 import sys
 import Calc
@@ -9,8 +9,13 @@ def test_parse_function():
 
 	for expected_success, expected_output, input_data in [
 		( True ,	3,	"3" ),
-		( True ,	5,	"3+2" ),
+		( True ,	9,	"3+2" ),
 		( False,	None,	"3+a" ),
+		( True ,	7,	"3+2*2" ),
+		( True ,	5,	"14/7+3" ),
+        ( True ,	28,	"9*2+10" ),
+		(True, 125, "0x7f - 0o7 + 0b101")
+
 	]:
 		num_tests += 1
 		try:
