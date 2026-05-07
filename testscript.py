@@ -9,7 +9,7 @@ def test_parse_function():
 
 	for expected_success, expected_output, input_data in [
 		( True ,	3,	"3" ),
-		( True ,	9,	"3+2" ),
+		( True ,	5,	"3+2" ),
 		( False,	None,	"3+a" ),
 		( True ,	7,	"3+2*2" ),
 		( True ,	5,	"14/7+3" ),
