@@ -194,20 +194,20 @@ class Expr:
 		elif self.op == '<<':   return x << y
 		elif self.op == '>>':   return x >> y
 		elif self.op == '+':    return x + y
-		elif self.op == '-':    return x - y
+		elif self.op == '-':    return x  y #- initially 
 		elif self.op == '*':    return x * y
 		elif self.op == '/':
 			if y:
-				   return x / float(y)
+				return x / float(y)
 			else:
-				   print("Error: division by zero.")
-				   return None
+				print("Error: division by zero.")
+				return None
 		elif self.op == '%':
 			if y:
-				   return x % int(y)
+				return x % int(y)
 			else:
-				   print("Error: modulo by zero.")
-				   return
+				print("Error: modulo by zero.")
+				return
 		elif self.op == '+ x':  return +y
 		elif self.op == '- x':  return -y
 		elif self.op == '~ x':  return ~int(y)
